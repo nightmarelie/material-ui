@@ -11,7 +11,7 @@ import {
   Grid,
   Container,
 } from "@material-ui/core";
-import PhotoCamera from "@material-ui/icons/PhotoCamera";
+import { PhotoCamera } from "@material-ui/icons";
 
 function App() {
   return (
@@ -23,6 +23,20 @@ function App() {
           <Typography variant="h6">Photo Album</Typography>
         </Toolbar>
       </AppBar>
+      <main>
+        <div>
+          <Container maxWidth="sm">
+            <Typography
+              variant="h2"
+              align="center"
+              color="textPrimary"
+              gutterBottom
+            >
+              Photo Album
+            </Typography>
+          </Container>
+        </div>
+      </main>
     </>
   );
 }
