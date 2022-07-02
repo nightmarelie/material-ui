@@ -2,6 +2,7 @@ import React from "react";
 import {
   Typography,
   AppBar,
+  Button,
   Card,
   CardActions,
   CardContent,
@@ -34,6 +35,24 @@ function App() {
             >
               Photo Album
             </Typography>
+            <Typography
+              variant="h2"
+              align="center"
+              color="textSecondary"
+              gutterBottom
+              paragraph
+            >
+              Desc
+            </Typography>
+            <div>
+              <Grid container spacing={2} justifyContent="center">
+                <Grid item>
+                  <Button variant="contained" color="primary">
+                    Photos
+                  </Button>
+                </Grid>
+              </Grid>
+            </div>
           </Container>
         </div>
       </main>
