@@ -13,13 +13,7 @@ import {
   Container,
 } from "@material-ui/core";
 import { PhotoCamera } from "@material-ui/icons";
-import { makeStyles } from "@material-ui/core/styles";
-
-const useStyles = makeStyles(() => ({
-  container: {
-    marginTop: "20px",
-  },
-}));
+import { useStyles } from "./styles";
 
 function App() {
   const classes = useStyles();
