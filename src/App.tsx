@@ -70,6 +70,33 @@ function App() {
               </Grid>
             </div>
           </Container>
+          <Container className={classes.cardGrid} maxWidth="md">
+            <Grid container spacing={4}>
+              <Grid item>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://source.unsplash.com/random"
+                    title="Image title"
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography variant="h5" gutterBottom>
+                      Header
+                    </Typography>
+                    <Typography>Desc</Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      View
+                    </Button>
+                    <Button size="small" color="primary">
+                      Edit
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            </Grid>
+          </Container>
         </div>
       </main>
     </>
