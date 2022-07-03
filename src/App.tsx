@@ -15,7 +15,11 @@ import {
 import { PhotoCamera } from "@material-ui/icons";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(() => ({}));
+const useStyles = makeStyles(() => ({
+  container: {
+    marginTop: "20px",
+  },
+}));
 
 function App() {
   const classes = useStyles();
@@ -30,7 +34,7 @@ function App() {
       </AppBar>
       <main>
         <div>
-          <Container maxWidth="sm" style={{ marginTop: "20px" }}>
+          <Container maxWidth="sm" className={classes.container}>
             <Typography
               variant="h2"
               align="center"
