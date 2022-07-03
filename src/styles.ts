@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   container: {
     marginTop: "20px",
   },
@@ -23,6 +23,10 @@ const useStyles = makeStyles(() => ({
   },
   cardContent: {
     flexGrow: 1,
+  },
+  footer: {
+    backgroundColor: theme.palette.background.paper,
+    padding: "50px 0",
   },
 }));
 
