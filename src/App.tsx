@@ -13,8 +13,12 @@ import {
   Container,
 } from "@material-ui/core";
 import { PhotoCamera } from "@material-ui/icons";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles(() => ({}));
 
 function App() {
+  const classes = useStyles();
   return (
     <>
       <CssBaseline />
@@ -26,7 +30,7 @@ function App() {
       </AppBar>
       <main>
         <div>
-          <Container maxWidth="sm">
+          <Container maxWidth="sm" style={{ marginTop: "20px" }}>
             <Typography
               variant="h2"
               align="center"
@@ -49,6 +53,12 @@ function App() {
                 <Grid item>
                   <Button variant="contained" color="primary">
                     Photos
+                  </Button>
+                </Grid>
+
+                <Grid item>
+                  <Button variant="contained" color="secondary">
+                    Albom
                   </Button>
                 </Grid>
               </Grid>
