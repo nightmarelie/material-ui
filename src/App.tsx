@@ -103,6 +103,9 @@ function App() {
         <Typography variant="h6" align="center" gutterBottom>
           Footer
         </Typography>
+        <Typography align="center" gutterBottom>
+          Footer desc
+        </Typography>
       </footer>
     </>
   );
